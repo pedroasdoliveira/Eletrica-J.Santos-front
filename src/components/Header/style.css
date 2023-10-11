@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Frame1 {
+    width: calc(100% - 82%);
+    height: auto;
+}
+
+.Frame2 {
+    width: 90%;
+    height: auto;
+}
+
+.name_img {
+    position: relative;
+    top: 20%;
+}
+
+.Frame3 {
+    width: 100%;
+    background-color: #FBAF17;
+    border-radius: 40px 0 0 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
