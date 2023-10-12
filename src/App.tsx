@@ -1,4 +1,5 @@
 import './App.css';
+import Banner from './components/Banner';
 import Header from './components/Header';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <Header />
 
       <section className='section-banner'>
-
+        <Banner />
       </section>
 
       <section className='section-products'>
