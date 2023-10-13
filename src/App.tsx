@@ -1,6 +1,7 @@
 import './App.css';
 
 import Banner from './components/Banner';
+import Categorys from './components/Categorys';
 import Header from './components/Header';
 import Products from './components/Products';
 
@@ -15,6 +16,10 @@ function App() {
 
       <section className='section-products'>
         <Products />
+      </section>
+
+      <section className='section-categories'>
+        <Categorys />
       </section>
     </main>
   );
