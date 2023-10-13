@@ -35,3 +35,9 @@
     text-transform: uppercase;
     color: #fff;
 }
+
+@media (max-width: 1120px) {
+    .products_box > h1 {
+        font-size: 1.5rem;
+    }
+}

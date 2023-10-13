@@ -5,17 +5,123 @@
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
 .grid_items > .item {
     width: 100%;
-    height: auto;
-    border: 1px solid #efefef;
+    min-height: 470px;
+    max-height: 470px;
     border-radius: 10px;
 }
 
 .item > img {
     width: 100%;
     max-height: 250px;
+}
+
+.item > span {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 500;
+    background-color: #E0E0E0;
+    border: 1px solid transparent;
+    border-radius: 0px 10px 10px 0;
+    padding: 0.2rem 1rem;
+
+    position: relative;
+    top: 60px;
+}
+
+.item > .product_infos {
+    width: 100%;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.product_infos > h2 {
+    color: var(--product-info-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.product_infos > .prices_infos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prices_infos > .real_value {
+    text-decoration: line-through;
+    font-weight: 400;
+    color: var(--product-info-color);
+    margin-left: 1rem;
+    text-wrap: nowrap;
+}
+
+.promotion_box > .promotion_value {
+    background-color: var(--orange-color);
+    border-radius: 15px 0 0 15px;
+    color: var(--product-info-color);
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+}
+
+.product_infos > .description {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description > p {
+    background-color: #F7F7F7;
+    padding: 0.5rem 1.8rem;
+    color: var(--product-info-color);
+    border-radius: 15px;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1120px) {
+    .grid_items {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    .grid_items > .item {
+        width: 80%;
+    }
+
+    .item > span {
+        padding: 0.2rem 0.4rem;
+    }
+
+    .product_infos > h2 {
+        font-size: 1rem;
+    }
+
+    .prices_infos > .real_value {
+        font-size: 0.8rem;
+    }
+
+    .promotion_box > .promotion_value {
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

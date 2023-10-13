@@ -12,3 +12,9 @@ body {
   background-color: #fff;
   color: #202332;
 }
+
+:root {
+  --orange-color: #FBAF17;
+
+  --product-info-color: #333333;
+}
