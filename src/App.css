@@ -1,13 +1,13 @@
 .App {
   background-color: #fff;
-  color: #202332;
+  color: var(--black-font-color);
 }
 
 .section-banner {
   width: 100%;
   height: auto;
   padding: 4rem 2rem;
-  background-color: #202332ED;
+  background-color: var(--black-color);
 }
 
 .section-products {
@@ -19,6 +19,18 @@
 .section-categories {
   width: 100%;
   padding: 2rem 0;
+}
+
+.section-description {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #F7F7F7;
+  color: var(--black-font-color);
+}
+
+.app-footer {
+  width: 100%;
+  color: var(--black-font-color);
 }
 
 @media (max-width: 1199px) {

@@ -14,7 +14,11 @@ body {
 }
 
 :root {
+  --white-color: #fff;
   --orange-color: #FBAF17;
+  --black-color: #202332ED;
+  
+  --black-font-color: #202332;
 
   --product-info-color: #333333;
 }
