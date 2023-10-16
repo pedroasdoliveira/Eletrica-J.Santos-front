@@ -1,6 +1,41 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./style.css";
 
+const dropdownItens = [
+  {
+    title: "Lâmpadas",
+    url: "#",
+  },
+  {
+    title: "Lustres",
+    url: "#",
+  },
+  {
+    title: "Luminárias",
+    url: "#",
+  },
+  {
+    title: "Decorações",
+    url: "#",
+  },
+  {
+    title: "Acessórios",
+    url: "#",
+  },
+  {
+    title: "Ferramentas",
+    url: "#",
+  },
+  {
+    title: "Utensílios Domésticos",
+    url: "#",
+  },
+  {
+    title: "Cabos",
+    url: "#",
+  },
+];
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
@@ -11,14 +46,14 @@ const Navbar = () => {
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav nav-ul">
+        <nav className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav nav-ul ">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
@@ -36,22 +71,14 @@ const Navbar = () => {
                 Categorias
               </a>
 
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
+              <ul className="dropdown-menu menus">
+                {dropdownItens.map((menu, index) => (
+                  <li className="menu-items" key={index}>
+                    <a className="dropdown-item" href={menu.url}>
+                      {menu.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
 
@@ -73,7 +100,7 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </nav>
   );

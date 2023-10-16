@@ -1,127 +1,158 @@
 .grid_items {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    gap: 1.6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .grid_items > .item {
-    width: 100%;
-    min-height: 470px;
-    max-height: 470px;
-    border-radius: 10px;
+  width: 100%;
+  min-height: 470px;
+  max-height: 470px;
+  border-radius: 10px;
 }
 
 .item > img {
-    width: 100%;
-    max-height: 250px;
+  width: 100%;
+  max-height: 250px;
 }
 
 .item > span {
-    font-size: 0.8rem;
-    color: #000;
-    font-weight: 500;
-    background-color: #E0E0E0;
-    border: 1px solid transparent;
-    border-radius: 0px 10px 10px 0;
-    padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 500;
+  background-color: #e0e0e0;
+  border: 1px solid transparent;
+  border-radius: 0px 10px 10px 0;
+  padding: 0.2rem 1rem;
 
-    position: relative;
-    top: 60px;
+  position: relative;
+  top: 60px;
 }
 
 .item > .product_infos {
-    width: 100%;
-    margin-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
 .product_infos > h2 {
-    color: var(--product-info-color);
-    font-weight: 500;
-    font-size: 1.2rem;
+  color: var(--product-info-color);
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .product_infos > .prices_infos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .prices_infos > .real_value {
-    text-decoration: line-through;
-    font-weight: 400;
-    color: var(--product-info-color);
-    margin-left: 1rem;
-    text-wrap: nowrap;
+  text-decoration: line-through;
+  font-weight: 400;
+  color: var(--product-info-color);
+  margin-left: 1rem;
+  text-wrap: nowrap;
 }
 
 .promotion_box > .promotion_value {
-    background-color: var(--orange-color);
-    border-radius: 15px 0 0 15px;
-    color: var(--product-info-color);
-    padding: 0.5rem 1.2rem;
-    font-size: 1.2rem;
-    text-wrap: nowrap;
+  background-color: var(--orange-color);
+  border-radius: 15px 0 0 15px;
+  color: var(--product-info-color);
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+  text-wrap: nowrap;
 }
 
 .product_infos > .description {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .description > p {
-    background-color: #F7F7F7;
-    padding: 0.5rem 1.8rem;
-    color: var(--product-info-color);
-    border-radius: 15px;
-    text-wrap: nowrap;
-    font-size: 0.8rem;
+  background-color: #f7f7f7;
+  padding: 0.5rem 1.8rem;
+  color: var(--product-info-color);
+  border-radius: 15px;
+  text-wrap: nowrap;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 1120px) {
-    .grid_items {
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: flex-start;
-        gap: 0.6rem;
-    }
+  .grid_items {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-start;
+    gap: 0.6rem;
+  }
 
-    .grid_items > .item {
-        width: 80%;
-    }
+  .grid_items > .item {
+    width: 80%;
+  }
 
-    .item > span {
-        padding: 0.2rem 0.4rem;
-    }
+  .item > span {
+    padding: 0.2rem 0.4rem;
+  }
 
-    .product_infos > h2 {
-        font-size: 1rem;
-    }
+  .product_infos > h2 {
+    font-size: 1rem;
+  }
 
-    .prices_infos > .real_value {
-        font-size: 0.8rem;
-    }
+  .prices_infos > .real_value {
+    font-size: 0.8rem;
+  }
 
-    .promotion_box > .promotion_value {
-        padding: 0.4rem;
-        font-size: 1rem;
-    }
+  .promotion_box > .promotion_value {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 800px) {
-    .grid_items {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .grid_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .grid_items {
+    gap: 0;
+  }
+
+  .product_infos > .prices_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product_infos > .prices_infos > .real_value {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .product_infos > .prices_infos > .promotion_box > .promotion_value {
+    border-radius: 15px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid_items {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }

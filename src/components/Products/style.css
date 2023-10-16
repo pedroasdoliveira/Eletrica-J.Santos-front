@@ -34,10 +34,41 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 0;
 }
 
 @media (max-width: 1120px) {
     .products_box > h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 711px) {
+    .wallpaper_box > img {
+        width: 100%;
+    }
+
+    .products_box {
+        bottom: 80px;
+    }
+
+    .products_box > h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 435px) {
+    .products_box > h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .products_box > h1 {
+        font-size: 1rem;
+    }
+
+    .wallpaper_box > img {
+        width: 103%;
     }
 }

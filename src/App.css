@@ -38,3 +38,15 @@
     padding: 4rem 0;
   }
 }
+
+@media (max-width: 435px) {
+  .section-products {
+    padding: 2rem 0.4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-products {
+    padding: 2rem 0;
+  }
+}

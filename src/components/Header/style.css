@@ -34,3 +34,35 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 790px) {
+    .Frame1 {
+        width: calc(100% - 63%);
+    }
+
+    .Frame2 {
+        width: 100%;
+    }
+
+    .Frame3 {
+        width: 65%;
+    }
+}
+
+@media (max-width: 425px) {
+    .Frame1 {
+        display: none;
+    }
+
+    .Frame2 {
+        width: 60%;
+    }
+
+    .Frame2 > .name_img {
+        width: 110px;
+    }
+
+    .Frame3 {
+        width: 70%;
+    }
+}

@@ -1,10 +1,12 @@
 import "./style.css";
 
-import Vector from "../../images/png/Vector.png";
+import { useEffect, useLayoutEffect, useState } from "react";
+
 import Woman_Photo from "../../images/png/foto_mulher.png";
-import Chandelier from '../../images/png/lustre.png';
-import Frame_2 from '../../images/png/frame_2.png';
-import Stars from '../../images/png/stars.png';
+import Frame_2 from "../../images/png/frame_2.png";
+import Chandelier from "../../images/png/lustre.png";
+import Stars from "../../images/png/stars.png";
+import Vector from "../../images/png/Vector.png";
 
 const Banner = () => {
   return (
