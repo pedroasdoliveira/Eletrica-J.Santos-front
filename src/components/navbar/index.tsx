@@ -52,8 +52,8 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <nav className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav nav-ul ">
+        <div className="collapse navbar-collapse navbar" id="navbarNavDropdown">
+          <ul className="navbar-nav nav-ul nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
@@ -100,7 +100,7 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </nav>
   );
